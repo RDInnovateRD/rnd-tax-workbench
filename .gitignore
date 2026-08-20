@@ -1,0 +1,9 @@
+# Installers are release assets, never committed.
+# Git rejects files over 100MB; these are 291-590MB each.
+assets/
+*.dmg
+*.exe
+*.zip
+*.AppImage
+*.deb
+.DS_Store

@@ -1,0 +1,5 @@
+742a347bcc8d79866a6a77bfb7f2785072b195b032ea43448136a23ecc83cd95  RnD-Tax-Workbench-1.1.0-mac-arm64.dmg
+c4e70a95457c44cd4cbfc262e7b07189582980750509bdbc034e5057268bcab6  RnD-Tax-Workbench-1.1.0-mac-x64.dmg
+9286d8ff3d9f3105fe28b470f32c2e2460617907739cbe3c66e5ca900d109736  RnD-Tax-Workbench-1.1.0-win-x64.exe
+8560d6c40eace7113dfdbaf3d1afcb6c9741657b26230a267ade6651d8d7faee  RnD-Tax-Workbench-1.1.0-mac-arm64.zip
+0bb05f12f968ef9c56dea72aa3f48358913891bd9333c4087d8a7ea8aa8687a0  RnD-Tax-Workbench-1.1.0-mac-x64.zip
