@@ -32,7 +32,7 @@ if ! gh repo view "$REPO" >/dev/null 2>&1; then
   gh repo create "$REPO" --public \
     --description "RnD Tax Workbench — Australian R&D Tax Incentive desktop app. Downloads: https://blog.rdinnovate.com/workbench/"
   git -C "$DIR" remote remove origin 2>/dev/null || true
-  git -C "$DIR" remote add origin "https://github.com/$REPO.git"
+  git -C "$DIR" remote add origin "git@github-blog:$REPO.git"
   git -C "$DIR" push -u origin main
   echo "  created $REPO"
 else
