@@ -2,7 +2,8 @@
 #
 # Cut a GitHub release for RnD Tax Workbench and upload the installers.
 #
-#   ./release.sh 1.1.0
+#   ./release.sh 1.2.0                                            # new repo
+#   REPO=Siva-2018/rnd-tax-workbench-releases ./release.sh 1.2.0  # old repo (1.1.0 installs update from here)
 #
 # Installers must already be hard-linked into assets/ with clean names.
 # Requires gh authenticated as the account owning $REPO.
@@ -10,7 +11,7 @@
 set -euo pipefail
 
 VERSION="${1:-}"
-REPO="RDInnovateRD/rnd-tax-workbench"
+REPO="${REPO:-RDInnovateRD/rnd-tax-workbench}"
 DIR="$(cd "$(dirname "$0")" && pwd)"
 ASSETS="$DIR/assets"
 
@@ -41,7 +42,7 @@ fi
 
 echo "▸ collecting assets"
 FILES=()
-for f in "$ASSETS"/*.dmg "$ASSETS"/*.exe "$ASSETS"/*.zip "$ASSETS"/*.yml; do
+for f in "$ASSETS"/*.dmg "$ASSETS"/*.exe "$ASSETS"/*.zip "$ASSETS"/*.blockmap "$ASSETS"/*.yml; do
   [ -e "$f" ] && FILES+=("$f")
 done
 [ -e "$DIR/SHA256SUMS.txt" ] && FILES+=("$DIR/SHA256SUMS.txt")
