@@ -24,7 +24,7 @@ Desktop application for preparing Australian R&D Tax Incentive claims.
 |---|---|
 | macOS, Apple silicon (M1–M4) | `RnD-Tax-Workbench-1.2.0-mac-arm64.dmg` |
 | macOS, Intel | `RnD-Tax-Workbench-1.2.0-mac-x64.dmg` |
-| Windows 10/11, 64-bit | `RnD-Tax-Workbench-1.2.0-win-x64.exe` (being added shortly) |
+| Windows 10/11, 64-bit | `RnD-Tax-Workbench-1.2.0-win-x64.exe` |
 
 The `.zip`, `.blockmap` and `.yml` files are used by automatic updates and are not needed
 for installation.
