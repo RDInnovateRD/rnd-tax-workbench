@@ -100,7 +100,7 @@ Desktop application for preparing Australian R&D Tax Incentive claims.
 - Confirmations and errors appear inside the app instead of system pop-ups.
 - Sign-in is re-checked with the licence server, not only on this machine.
 - The top-up amount on the pricing page no longer jumps back to $29.
-- Redo after Undo restores the change again.
+- Redo re-applies the edit you just undid (it could re-apply an older undone edit).
 - The new-claim wizard no longer skips the Address step.
 - Opening Apportionment on a brand-new claim no longer shows an error.
 
