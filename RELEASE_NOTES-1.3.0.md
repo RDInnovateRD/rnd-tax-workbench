@@ -64,7 +64,26 @@ Desktop application for preparing Australian R&D Tax Incentive claims.
   it had never seen: 100% correct with no over-claims on the latest set.
 - AI processing for the R&D Tax Incentive stays in Australia.
 
+**AI never overwrites your work**
+- Accounts you classified yourself are kept when the AI runs again. Where the AI disagrees, the
+  account shows "AI suggests: …" with its reasons: change it, or click **Keep mine**.
+- An "AI changes" panel lists what each AI run changed, and a run keeps the cost category you chose
+  for an account.
+- An account the AI gave no answer for shows as Review Required (not claimed until you decide),
+  instead of quietly Non-R&D.
+- After you add payroll or activities, a banner offers to re-classify ledgers that were classified
+  before they existed.
+- Timesheet rows that do not clearly match one R&D activity are no longer filed under a guessed
+  activity. They wait in the timesheet review, even after a reload, until you choose.
+
+**Overseas contractors**
+- Contractors whose R&D work was done overseas need the AusIndustry overseas finding number on the
+  contractor record; without it they are not claimed. The app flags likely overseas contractors
+  (for example "Pte", "GmbH", "(NZ)"); mark them "In Australia" if that is where the work was done.
+  Spend you already entered under "Amounts to exclude" is not excluded twice.
+
 **Credits**
+- Top up any amount from A$14.99, or pick A$29 / A$49 / A$99.
 - Credit packs are unchanged (A$29 = 500 credits), and so is the price of every step answered by
   Claude Sonnet.
 - A step answered by Claude Opus costs 3.5 times the Sonnet price. You are charged for the model that
@@ -81,6 +100,7 @@ Desktop application for preparing Australian R&D Tax Incentive claims.
 - Confirmations and errors appear inside the app instead of system pop-ups.
 - Sign-in is re-checked with the licence server, not only on this machine.
 - The top-up amount on the pricing page no longer jumps back to $29.
+- Redo after Undo restores the change again.
 - The new-claim wizard no longer skips the Address step.
 - Opening Apportionment on a brand-new claim no longer shows an error.
 
@@ -93,7 +113,11 @@ The app shows **Not ready to lodge** until these are done. Each item clears as s
    capitalised into. Until then it is not added to the claim.
 3. Review any figure that changed: item 7 no longer includes amortisation of intangibles, and lease
    and interest lines are treated as above.
-4. **Feedstock:** the adjustment is recalculated under the new method; open each product on
+4. **Overseas contractors:** enter the overseas finding number on each contractor flagged as
+   overseas, or mark it "In Australia".
+5. **Timesheets imported with 1.2.x:** re-check allocations where a row's task did not name an
+   activity; earlier versions could file it under the first activity.
+6. **Feedstock:** the adjustment is recalculated under the new method; open each product on
    Feedstock & Grants and check it. For an output processed further before sale, enter the market value of the marketable product and the
    two production costs; until then the Summary lists it as a lodgement blocker.
 
