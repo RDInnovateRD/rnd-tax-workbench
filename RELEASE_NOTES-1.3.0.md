@@ -104,6 +104,10 @@ Desktop application for preparing Australian R&D Tax Incentive claims.
 - The new-claim wizard no longer skips the Address step.
 - Opening Apportionment on a brand-new claim no longer shows an error.
 
+**Linux (new)**
+- RnD Tax Workbench now runs on 64-bit Linux: an AppImage, a .deb for Debian and Ubuntu, and an
+  .rpm for Fedora and RHEL.
+
 ### Before you lodge a claim you started in an earlier version
 The app shows **Not ready to lodge** until these are done. Each item clears as soon as you answer it:
 1. **2025-26 and later claims:** on the Summary, answer the gambling and tobacco question for every
@@ -131,6 +135,7 @@ it to restart and install. You can also download the installer from the download
 | macOS, Apple silicon (M1–M4) | `RnD-Tax-Workbench-1.3.0-mac-arm64.dmg` |
 | macOS, Intel | `RnD-Tax-Workbench-1.3.0-mac-x64.dmg` |
 | Windows 10/11, 64-bit | `RnD-Tax-Workbench-1.3.0-win-x64.exe` |
+| Linux, 64-bit (new) | `RnD-Tax-Workbench-1.3.0-x86_64.AppImage`, or the `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, RHEL) |
 
 The `.zip`, `.blockmap` and `.yml` files are used by automatic updates and are not needed
 for installation.
@@ -140,7 +145,7 @@ The macOS builds are signed and notarised by Apple. The Windows installer is not
 code-signed, so Windows SmartScreen shows a warning: choose **More info**, then **Run anyway**.
 
 ### Verifying
-Checksums are in `SHA256SUMS.txt`. On macOS: `shasum -a 256 <file>`.
+Checksums are in `SHA256SUMS.txt`. On macOS and Linux: `shasum -a 256 <file>`.
 On Windows (PowerShell): `Get-FileHash <file> -Algorithm SHA256`
 
 ### Your data
