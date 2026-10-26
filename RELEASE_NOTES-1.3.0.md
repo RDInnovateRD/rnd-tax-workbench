@@ -31,6 +31,16 @@ Desktop application for preparing Australian R&D Tax Incentive claims.
 - R&D intensity, grant clawbacks and feedstock follow the ATO's published formulas. Hours worked
   come from payroll; the app no longer assumes a full-time year when hours are missing.
 - A per-employee check of each person's R&D share, with an audit trail of every change.
+- Feedstock (s 355-445) is worked out per output, as the Act sets it out: the lesser of the
+  feedstock expenditure (inputs, energy and the decline in value of assets used to make them) and
+  the feedstock revenue. For an output that is processed further before sale, the revenue is the
+  market value of the marketable product times the cost of producing the feedstock output over the
+  cost of producing the marketable product. Outputs that came from inputs claimed in earlier income
+  years are split across those years at each year's offset rate (Feedstock & Grants, "Earlier
+  income years").
+- Apportionment uses the same figures as the schedule, so the two always agree.
+- Part-time staff: hours worked are taken from the timesheet when payroll has none, instead of a
+  full-time year.
 
 **Your decisions**
 - Where the law is unsettled, or the answer depends on facts only you know, the Summary shows the
@@ -61,7 +71,15 @@ Desktop application for preparing Australian R&D Tax Incentive claims.
   actually answered, after it answers: if Sonnet answers, you pay the Sonnet price.
 - The "Credits needed" card shows both figures.
 
+**Saving**
+- Every tab saves as you type, including the Feedstock and Grants wizards; "Done" closes the form.
+  The indicator next to it shows Saving / Saved, and Retry if a save failed.
+
 **Fixes**
+- Creating a project with AI can also write its activity narratives; the credit cost is shown
+  before anything is spent.
+- Confirmations and errors appear inside the app instead of system pop-ups.
+- Sign-in is re-checked with the licence server, not only on this machine.
 - The top-up amount on the pricing page no longer jumps back to $29.
 - The new-claim wizard no longer skips the Address step.
 - Opening Apportionment on a brand-new claim no longer shows an error.
@@ -75,6 +93,9 @@ The app shows **Not ready to lodge** until these are done. Each item clears as s
    capitalised into. Until then it is not added to the claim.
 3. Review any figure that changed: item 7 no longer includes amortisation of intangibles, and lease
    and interest lines are treated as above.
+4. **Feedstock:** the adjustment is recalculated under the new method; open each product on
+   Feedstock & Grants and check it. For an output processed further before sale, enter the market value of the marketable product and the
+   two production costs; until then the Summary lists it as a lodgement blocker.
 
 ### Updating
 The app checks for updates a few times a day and shows an update bar next to the credit meter; click
