@@ -42,7 +42,7 @@ fi
 
 echo "▸ collecting assets"
 FILES=()
-for f in "$ASSETS"/*.dmg "$ASSETS"/*.exe "$ASSETS"/*.zip "$ASSETS"/*.blockmap "$ASSETS"/*.yml; do
+for f in "$ASSETS"/*.dmg "$ASSETS"/*.exe "$ASSETS"/*.zip "$ASSETS"/*.blockmap "$ASSETS"/*.yml "$ASSETS"/*.AppImage "$ASSETS"/*.deb "$ASSETS"/*.rpm; do
   [ -e "$f" ] && FILES+=("$f")
 done
 [ -e "$DIR/SHA256SUMS.txt" ] && FILES+=("$DIR/SHA256SUMS.txt")
